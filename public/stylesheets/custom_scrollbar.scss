@@ -1,0 +1,25 @@
+.custom-scrollbar::-webkit-scrollbar {
+  width: 660px;
+  height: 13px;
+  border-radius: 6px;
+  background-color: rgba(233, 236, 239, 0.5);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: rgba(52, 52, 52, 0.9);
+  border: solid rgba(255, 255, 255, 0.8) 1.5px;
+}
+
+.custom-scrollbar2::-webkit-scrollbar {
+  width: 10px;
+  height: 80%;
+  border-radius: 6px;
+  background-color: rgba(233, 236, 239, 0.5);
+}
+
+.custom-scrollbar2::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: rgba(52, 52, 52, 0.9);
+  border: solid rgba(255, 255, 255, 0.8) 1.5px;
+}

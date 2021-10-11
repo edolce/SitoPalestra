@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Againts';
+  src: url('Againts.eot');
+  src: url('Againts.eot?#iefix') format('embedded-opentype'),
+       url('Againts.svg#Againts') format('svg'),
+       url('Againts.ttf') format('truetype'),
+       url('Againts.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

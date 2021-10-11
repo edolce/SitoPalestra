@@ -1,0 +1,33 @@
+.footer{
+  .main{
+    margin: 25px auto auto;
+    text-align: center;
+    height: 8vw;
+    width: 70%;
+    border-radius: 100px;
+    border: solid #707070 1px;
+    background-color: rgba(255, 255, 255, 0.81);
+  }
+  .first{
+    font-family: Verdana, serif;
+    font-size: 1.4vw;
+    color: #707070;
+  }
+  .second{
+    font-family: Verdana, serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 1vw;
+    color: #848484;
+    padding: 0;
+    margin: 1vw 0 0;
+  }
+  .one{
+    margin: 1vw 0 0;
+    padding: 0;
+  }
+  .two{
+    margin: 0;
+    padding: 0;
+  }
+}

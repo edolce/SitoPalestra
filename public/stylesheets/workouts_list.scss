@@ -1,0 +1,261 @@
+section.main {
+  text-align: center;
+
+  div.title {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-family: Againts, serif;
+      font-size: 120px;
+      color: #ffffff;
+      font-weight: normal;
+      text-align: center;
+      margin: 10px auto;
+    }
+  }
+
+
+  div.main_scroller {
+    margin: 0 120px;
+    position: relative;
+
+
+    .arnold {
+      position: absolute;
+      height: 100%;
+      top: -20px;
+      z-index: 1;
+    }
+
+
+    .blur {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.2); // Make sure this color has an opacity of less than 1
+      backdrop-filter: blur(5px); // This be the blur
+      height: 100%;
+      width: 30px;
+      top: -20px;
+    }
+
+    .first {
+      -moz-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      transform: scaleX(-1);
+      right: -300px;
+    }
+
+    .second {
+
+      left: -300px;
+    }
+  }
+
+  ul {
+    padding: 0;
+    display: flex;
+    overflow-x: scroll;
+
+    li {
+      position: relative;
+      padding: 20px;
+      list-style-type: none;
+
+      div.card{
+        transition:500ms linear;
+        border: solid rgba(255, 255, 255, 0.82) 3px;
+        border-radius: 59px;
+        background-color: rgba(233, 236, 239, 0.8);
+        height: 404px;
+        width: 237px;
+        h1 {
+          transition:500ms linear;
+        }
+        .workout_img {
+          transition:500ms linear;
+        }
+      }
+
+      div.normal {
+        position: relative;
+
+        h1 {
+          color: rgb(43, 43, 43);
+          font-family: Againts, serif;
+          font-size: 50px;
+          margin: 10px 0 10px;
+        }
+
+        .mcgregor {
+          position: relative;
+          left: -5%;
+          width: 110%;
+          height: 85%;
+          top: -18px;
+        }
+
+        .arnold2 {
+          position: relative;
+          left: -13%;
+          height: 80.5%;
+          top: 0;
+        }
+
+        .girl {
+          position: relative;
+          left: -6%;
+          height: 80.5%;
+          top: 0;
+        }
+
+        div.img-container {
+          width: 80%;
+          height: 40%;
+          background-color: red;
+          margin: 10% auto auto;
+        }
+
+        div.mini_scroller {
+          margin: auto;
+          width: 176px;
+          height: 96px;
+          background-color: #FFFFFF;
+          border-radius: 29px;
+          border: solid #707070 2px;
+        }
+      }
+
+      div.add {
+
+        img {
+          position: relative;
+          left: -55%;
+          width: auto;
+          height: 80%;
+        }
+
+        h1 {
+          color: rgb(43, 43, 43);
+          font-family: Againts, serif;
+          font-size: 50px;
+          margin: 10px 0 10px;
+        }
+
+      }
+
+      div.card:hover {
+
+        border: solid rgba(255, 255, 255, 0.82) 3px;
+        background-color: rgba(59, 59, 59, 0.8);
+
+        h1 {
+          color: rgb(222, 222, 222);
+        }
+        .workout_img {
+          opacity: 0.25;
+        }
+
+        div.hidden{
+          display: block;
+          color: rgba(226, 226, 226);
+          z-index: 10;
+        }
+
+      }
+
+      div.hidden{
+        transition:500ms linear;
+        width: 80%;
+        height: 75%;
+        color: rgba(226, 226, 226, 0);
+        position: absolute;
+        z-index: -10;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 0;
+        overflow-y: scroll;
+
+        p{
+          margin: 10px;
+        }
+        .muscle-title{
+          margin-top: 20px;
+          font-family: Againts, serif;
+          font-size: 30px;
+        }
+        .exercise-title{
+          font-family: Againts, serif;
+          font-size: 20px;
+        }
+
+
+
+      }
+
+
+    }
+  }
+}
+
+div.line{
+  height: 1.5px;
+  width: 90%;
+  background-color: black;
+  margin: 20px auto auto;
+}
+
+.search_bar{
+  color: #000000;
+  padding: 10px;
+  font-family: Verdana, serif;
+  font-weight: lighter;
+  font-size: 20px;
+  text-transform:uppercase;
+  width: 228px;
+  height: 31px;
+  border-radius: 25px;
+  border: solid #707070 1px;
+  background-color: rgba(226, 226, 226, 0.38);
+}
+
+.content{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+body{
+  overflow: hidden;
+}
+
+.background-holder{
+  top:0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(56, 56, 56, 0.5);
+  z-index: -10;
+}
+
+.background{
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -11;
+}
+
